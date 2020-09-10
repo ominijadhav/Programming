@@ -1,3 +1,5 @@
+/* Write C Programto find Sum of Elements from given array and find Average of all elements in array */
+
 #include <stdio.h>
 
  int main()
@@ -34,7 +36,8 @@ printf("\n Average of all input numbers = %.2f\n", average); 
 
 
 
-Cpp
+/* Write C++ Programto find Sum of Elements from given array and find Average of all elements in array */
+
 
 #include <iostream>
 using namespace std; 
