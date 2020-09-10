@@ -1,0 +1,113 @@
+/*Write C Program to Remove Duplicate Elements in an array */
+
+
+#include<stdio.h>
+#include<conio.h> 
+void main() 
+{ 
+int a[20], i, j, k, n; 
+ printf("\nEnter array size: ");
+ scanf("%d", &n);
+ printf("\nEnter %d array element: ", n);
+ for(i = 0; i < n; i++) 
+{ 
+   scanf("%d", &a[i]);
+   } 
+   printf("\nOriginal array is: "); 
+   for(i = 0; i < n; i++)
+ { 
+   printf(" %d", a[i]); 
+   } 
+   printf("\nNew array is: ");
+   for(i = 0; i < n; i++) 
+{ 
+for(j = i+1; j < n; ) 
+{ 
+if(a[j] == a[i]) 
+
+{ 
+ 
+ for(k = j; k < n; k++) 
+{ 
+  a[k] = a[k+1]; 
+}
+ n--; 
+ } 
+else
+{ 
+   j++;
+ 
+ } 
+ 
+}
+
+ } 
+for(i = 0; i < n; i++)
+{ 
+  printf("%d ", a[i]); 
+  
+} 
+
+getch();
+
+ }
+
+
+/*Write C++ Program to Remove Duplicate Elements in an array */
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+
+{
+	int i,j,k,n,a[30];
+
+	cout<<"How many elements?";
+
+	cin>>n;
+
+	cout<<"\nEnter elements of array\n";
+
+	for(i=0;i<n;++i)
+
+		cin>>a[i];
+    
+	for(i=0;i<n;++i)
+
+		for(j=i+1;j<n;)
+
+{
+			if(a[i]==a[j])
+
+	{
+
+				for(k=j;k<n-1;++k)
+
+					a[k]=a[k+1];
+          
+				--n;
+
+			}
+
+			else
+
+				++j;
+
+		}
+
+	
+
+	cout<<"\n";
+
+	for(i=0;i<n;++i)
+
+		cout<<a[i]<<" ";
+
+ 
+
+	return 0;
+  
+  }
+
